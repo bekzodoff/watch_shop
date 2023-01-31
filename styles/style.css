@@ -1,8 +1,11 @@
 :root{
-    --white:#fff;
-    --mont:"Montserrat";
-    --gray:#323232;
+    --white: #fff;
+    --mont: "Montserrat";
+    --gray: #323232;
+    --content-bg-color: #E1E1E1;
 }
+
+
 
 *{
     margin: 0;
@@ -18,10 +21,10 @@ a{
 ul{
     list-style: none;
 }
-button{
+button {
     border: none;
 }
-.container{
+.container {
     max-width: 1320px;
     width: 100%;
     margin-left: auto;
@@ -29,7 +32,6 @@ button{
     padding-left: 15px;
     padding-right: 15px;
 }
-
 /* HEADER */
 
 .header{
@@ -99,33 +101,106 @@ button{
 
 /* MAIN */
 
+.mainshop{
+    position: relative;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.mainshop__title{
+    color: var(--gray);
+    font-family: var(--mont);
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mainshop__content-left{
+    position: relative;
+    width: 526px;
+    height: 294px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    background: var(--content-bg-color);
+    border-radius: 10px;
+    box-shadow: 5px 5px 16px -5px #888888;
+}
+.mainshop__content-right{
+    position: absolute;
+    width: 746px;
+    height: 618px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    background: var(--content-bg-color);
+    border-radius: 10px;
+    box-shadow: 5px 5px 16px -5px #888888;
+}
+.mainshop__sale{
+    position: absolute;
+    width: 123px;
+    height: 49px;
+    left: 0;
+    top: 0;
+    font-family: var(--mont);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background: var(--gray);
+    border-radius: 10px;
+    margin: 16px 0px 0px 22px;
+    padding: 11px 38px 11px 38px;
+}
+.mainshop__image{
+    width: 146px;
+    height: 174px;
+}
+.mainshop__image2{
+    width: 146px;
+    height: 174px;
+    margin-left: 90px;
+}
+.mainshop__image-right{
+    width: 306px;
+    height: 242px;
+}
+.mainshop__watch-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.mainshop__watch-info{
+    font-family: var(--mont);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.mainshop__watch-model{
+    font-family: var(--mont);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.mainshop__watch-model-right{
+    font-family: var(--mont);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.mainshop__watch-cost{
+    font-family: var(--mont);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
